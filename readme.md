@@ -21,7 +21,7 @@ venv\Scripts\activate
 
 #### 4. Install the dependencies:
 ```bash
-pip install -r requirements.txt
+pip install django-admin
 ```
 
 #### 5. Set up the Django project:
@@ -66,7 +66,7 @@ source venv/bin/activate
 
 #### 4. Install the dependencies:
 ```bash
-pip install -r requirements.txt
+pip install django-admin
 ```
 
 #### 5. Set up the Django project:
