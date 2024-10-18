@@ -1,0 +1,14 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 500px; /* Limit the width of the registration form */
+    margin: auto; /* Center the form on the page */
+}

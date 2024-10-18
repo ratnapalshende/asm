@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% load static %} <!-- Add this line -->
+    <link rel="stylesheet" href="{% static 'client_app/css/register.css' %}">
+</head>
+<body>
+    <div class="register-container">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        <form action="{% url 'register' %}" method="post">
+            {% csrf_token %}
+            <h2>Sign Up</h2>
+            {{ form.name.label }}<br>
+            {{ form.name }}<br>
+            {{ form.email.label }}<br>
+            {{ form.email }}<br>
+            {{ form.password.label }}<br>
+            {{ form.password }}<br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
